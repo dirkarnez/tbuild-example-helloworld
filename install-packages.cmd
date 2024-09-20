@@ -10,7 +10,8 @@ set PATH=^
 %PYTHON_DIR%\Scripts;^
 %DOWNLOADS_DIR%\PortableGit\bin;
 
-C:\Windows\System32\taskkill /f /im python.exe &&^
+C:\Windows\System32\taskkill /f /im python.exe
+
 cd /d "%DOWNLOADS_DIR%" &&^
 rmdir /s /q tbuild &&^
 git clone https://github.com/dirkarnez/tbuild.git &&^
