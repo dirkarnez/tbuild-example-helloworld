@@ -11,9 +11,9 @@ set PATH=^
 %DOWNLOADS_DIR%\PortableGit\bin;
 
 C:\Windows\System32\taskkill /f /im python.exe
+if exist "%DOWNLOADS_DIR%\tbuild" rmdir /s /q "%DOWNLOADS_DIR%\tbuild"
 
 cd /d "%DOWNLOADS_DIR%" &&^
-rmdir /s /q tbuild &&^
 git clone https://github.com/dirkarnez/tbuild.git &&^
 cd tbuild &&^
 .\setup.cmd &&^
