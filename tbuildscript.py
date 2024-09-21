@@ -1,10 +1,4 @@
 from pathlib import Path
-import sys
-sys.path.append(str(Path(__file__).absolute().parent.parent.parent))
-# import tbuild
-import sys
-
-# setting path
 from tbuild import TBuild
 
 tbuild = TBuild(Path.home() / "Downloads" / "winlibs-x86_64-posix-seh-gcc-11.2.0-mingw-w64-9.0.0-r1" / "mingw64" / "bin", "")
