@@ -11,6 +11,7 @@ set PATH=^
 %DOWNLOADS_DIR%\PortableGit\bin;
 
 C:\Windows\System32\taskkill /f /im python.exe
+if exist "%PYTHON_DIR%\Lib\site-packages\tbuild-1.0.0-py3.10.egg" del /f /q "%PYTHON_DIR%\Lib\site-packages\tbuild-1.0.0-py3.10.egg"
 if exist "%DOWNLOADS_DIR%\tbuild" rmdir /s /q "%DOWNLOADS_DIR%\tbuild"
 
 cd /d "%DOWNLOADS_DIR%" &&^
